@@ -1,0 +1,52 @@
+.bank {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    &__bank-core {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        .core-icon {
+            color: grey;
+            cursor: pointer;
+        }
+    }
+    &__bank-data {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-rows: repeat(3, 70px);
+        grid-gap: 2rem;
+        margin-top: 2rem;
+        // justify-content: center;
+        // align-items: center;
+        &--change {
+            display: none;
+        }
+    }
+    &__nipbank {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 70px);
+        grid-gap: 2rem;
+        margin-top: 2rem;
+    }
+    &__nip-text {
+        color: orange;
+        font-size: 3rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        animation: move 3s ease-in-out infinite;
+    }
+    @keyframes move {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(30%);
+        }
+        100% {
+            transform: translateY(-30%);
+        }
+    }
+}

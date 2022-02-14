@@ -1,0 +1,73 @@
+.navBar {
+    background-color: rgb(24, 23, 23);
+    color: #fff;
+    // font-size: 1.5rem;
+    height: 9vh;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    &__leftSide {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 6%;
+        cursor: pointer;
+    }
+    &__leftSideIcon {
+        color: grey;
+    }
+    &__lefSideText {
+        color: grey;
+        font-size: 1.8rem;
+        &--textColor {
+            color: #fff;
+        }
+    }
+    &__rightSide {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-right: 5%;
+    }
+    &__rightSideIconTextWrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__rightSideGroupIconText {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        background-color: rgb(46, 45, 45);
+    }
+    &__rightSideIcon {
+        height: 3rem;
+        width: 4rem;
+        background-color: rgb(46, 45, 45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        color: grey;
+        cursor: pointer;
+    }
+    &__rightSideIcon:hover {
+        color: #fff;
+    }
+    &__rightSideText {
+        padding-right: 1rem;
+        color: grey;
+        cursor: pointer;
+        &--textColor {
+            color: orange;
+        }
+        &--textHoverColor:hover {
+            color: #fff;
+        }
+    }
+}

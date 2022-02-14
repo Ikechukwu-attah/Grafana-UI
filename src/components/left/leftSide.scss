@@ -1,0 +1,47 @@
+.leftBar {
+    flex: 4%;
+    background-color: #000;
+    height: 100vh;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 4%;
+    top: 0px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    &__Logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        margin-top: 1rem;
+    }
+    &__Logo1 {
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    &__icon1 {
+        transform: scale(2);
+        color: grey;
+        cursor: pointer;
+        &--mbottom {
+            margin-bottom: 2rem;
+        }
+    }
+    &__Logos2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    &__Logo2 {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

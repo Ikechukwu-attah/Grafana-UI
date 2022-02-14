@@ -1,0 +1,22 @@
+.bank-list {
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .2s;
+    // text-align: center;
+    li {
+        list-style: none;
+        text-align: center;
+    }
+    .bank-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10px;
+    }
+}
+
+.bank-list:hover {
+    transform: scale(1.5);
+}
